@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Devices</title>
+</head>
+<body>
+
+<h3 th:text="${devices.brandName}"></h3>
+<h3 th:text="${devices}" ></h3>
+
+<tr th:each="device: ${devices.devices}">
+    <td th:text="${device.name}" />
+    <td th:text="${device.type}"/>
+
+</tr>
+
+
+
+</body>
+</html>
